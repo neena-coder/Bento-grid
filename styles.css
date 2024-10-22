@@ -1,0 +1,542 @@
+:root{
+    --Purple-100: hsl(254, 88%, 90%);
+    --Purple-500: hsl(256, 67%, 59%);
+    --Yellow-100: hsl(31, 66%, 93%);
+    --Yellow-500: hsl(39, 100%, 71%);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    /* height: 100vh; */
+    background-color: aliceblue;
+}
+main{
+    padding: 2rem 20rem 0rem;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 1rem;
+    /* grid-template-rows: 1fr 1fr 1fr; */
+}
+.left div{
+    border-radius: 1rem;
+    padding: 1rem;
+    
+}
+.left .leftUp{
+    height: 16rem;
+    background-color: var(--Yellow-100);
+    margin-bottom: 1rem;  
+    padding: 2rem 1rem 0rem;  
+}
+.left .leftUp h3{
+    font-size: 1.5rem;
+ }
+ .left .leftUp h3 span{
+    color: var(--Purple-500);
+    
+ }
+ .left .leftUp img{
+    width: 70%;
+    margin: 1rem auto;
+ }
+.left .leftDown{
+    height: 16rem;
+    background-color: var(--Yellow-500);
+    margin-bottom: 1rem;   
+}
+.left .leftDown img{
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.rightUp{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    /* grid-gap: 1rem; */
+}
+.rightMainUp{
+    background-color: var(--Purple-500);
+    height: 11rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.rightMainUp h3{
+    font-size: 1.7rem;
+}
+.rightMainUp h3 span{
+    color: var(--Yellow-500);
+}
+.rightMainUp img{
+    width:30%;
+    margin-top: 2rem;
+
+}
+.rightMainUp p{
+    font-size: 0.7rem;
+
+}
+
+.rightMainDown{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+.rightMainDown div{
+    width: 50%;
+    border-radius: 1rem;
+    padding: 1rem;
+    height: 10rem;
+}
+
+.rightMainLeft{
+    background-color: white;
+    font-weight: bold;
+}
+
+.rightMainLeft img{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.rightMainRight{
+    background-color: var(--Yellow-500);
+    margin-left: 1rem;
+    height: 10rem;
+    background-image: url(./assets/images/illustration-consistent-schedule.webp);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center bottom -40px;
+    font-weight: bold;
+    
+    
+}
+
+
+.rightSub{
+    height: 22rem;
+    background-color: var(--Purple-100);
+    margin-left: 1rem;
+    border-radius: 1rem;
+    padding: 0.7rem;
+    background-image: url(./assets/images/illustration-schedule-posts.webp);
+    background-size: 120%;
+    background-repeat: no-repeat;
+    background-position: right -70px top 65px;
+}
+
+.rightSub img{
+    width: 150%;
+    overflow: hidden;
+}
+.rightSub p{
+    margin-top: 12rem;
+    font-size: 0.8rem;
+}
+.rightDown{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-top: 1rem;
+    
+}
+
+.rightDown div{
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.rightDownLeft{
+    background-color: white;
+    margin-right: 1rem;
+}
+.rightDownLeft span{
+    font-size: 2rem;
+}
+.rightDownLeft p{
+    font-size: 0.6rem;
+}
+.rightDownLeft img{
+    width: 100%;
+    margin-top: 1.5rem;
+}
+.rightDownRight{
+    background-color: var(--Purple-500);
+    height: 10rem;
+    display: flex;    
+    color: white;
+    font-size: 1.2rem;
+    align-items: center;
+    font-weight: bold;
+}
+
+.rightDownRight img{
+    height: 100%;
+    margin-right: 1rem;    
+}
+
+@media screen and (max-width: 500px) {
+    main{
+        padding: 1rem ;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .left div{
+        border-radius: 1rem;
+        padding: 1rem;
+        
+    }
+    .left .leftUp{
+        height: 16rem;
+        background-color: var(--Yellow-100);
+        margin-bottom: 1rem;  
+        padding: 2rem 1rem 0rem;  
+    }
+    .left .leftUp h3{
+        font-size: 1.5rem;
+     }
+     .left .leftUp h3 span{
+        color: var(--Purple-500);
+        
+     }
+     .left .leftUp img{
+        width: 70%;
+        margin: 1rem auto;
+     }
+    .left .leftDown{
+        height: 20rem;
+        background-color: var(--Yellow-500);
+        margin-bottom: 1rem;   
+    }
+    .left .leftDown img{
+        height: 70%;
+        width: auto;
+        margin-top: 1rem;
+    }
+    
+    .rightUp{
+        display: flex;
+        flex-direction: column;
+    }
+    .rightMainUp{
+        background-color: var(--Purple-500);
+        height: 15rem;
+        border-radius: 1rem;
+        padding: 1.5rem;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .rightMainUp h3{
+        font-size: 1.8rem;
+    }
+    .rightMainUp h3 span{
+        color: var(--Yellow-500);
+    }
+    .rightMainUp img{
+        width:30%;
+        margin-top: 2rem;
+    
+    }
+    .rightMainUp p{
+        font-size: 0.7rem;
+    
+    }
+    
+    .rightMainDown{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 1rem;
+    }
+    .rightMainDown div{
+        width: 100%;
+        border-radius: 1rem;
+        padding: 1rem;
+        height: 10rem;
+        
+    }
+    
+    .rightMainLeft{
+        background-color: white;
+        font-weight: bold;
+        text-align: center;
+    }
+    
+    .rightMainLeft img{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    
+    .rightMainRight{
+        background-color: var(--Yellow-500);
+        margin-left: 0rem;
+        height: 10rem;
+        background-image: url(./assets/images/illustration-consistent-schedule.webp);
+        background-size: 60%;
+        background-repeat: no-repeat;
+        background-position: left 10px bottom -60px;
+        font-weight: bold;
+        margin-top: 1rem;
+        
+        
+    }
+    
+    
+    .rightSub{
+        height: 22rem;
+        background-color: var(--Purple-100);
+        margin-left: 0rem;
+        border-radius: 1rem;
+        padding: 1rem;
+        background-image: url(./assets/images/illustration-schedule-posts.webp);
+        background-size: 70%;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-top: 1rem;
+        text-align: center;
+    }
+    
+    .rightSub img{
+        width: 150%;
+        overflow: hidden;
+    }
+    .rightSub p{
+        margin-top: 16rem;
+        font-size: 0.8rem;
+    }
+    .rightDown{
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: 1fr 2fr;
+        margin-top: 1rem;
+        
+    }
+    
+    .rightDown div{
+        padding: 1rem;
+        border-radius: 1rem;
+    }
+    
+    .rightDownLeft{
+        background-color: white;
+        margin-right: 0rem;
+    }
+    .rightDownLeft span{
+        font-size: 2rem;
+    }
+    .rightDownLeft p{
+        font-size: 0.6rem;
+    }
+    .rightDownLeft img{
+        width: 100%;
+        margin-top: 1.5rem;
+    }
+    .rightDownRight{
+        background-color: var(--Purple-500);
+        height: 10rem;
+        display: flex;    
+        color: white;
+        font-size: 1.2rem;
+        align-items: center;
+        font-weight: bold;
+        margin-top: 1rem;
+    }
+    
+    .rightDownRight img{
+        height: 100%;
+        margin-right: rem;    
+    }
+       
+    
+}
+
+@media screen and (max-width: 700px) {
+    main{
+        padding: 1rem ;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .left div{
+        border-radius: 1rem;
+        padding: 1rem;
+        
+    }
+    .left .leftUp{
+        height: 16rem;
+        background-color: var(--Yellow-100);
+        margin-bottom: 1rem;  
+        padding: 2rem 1rem 0rem;  
+    }
+    .left .leftUp h3{
+        font-size: 1.5rem;
+     }
+     .left .leftUp h3 span{
+        color: var(--Purple-500);
+        
+     }
+     .left .leftUp img{
+        width: 70%;
+        margin: 1rem auto;
+     }
+    .left .leftDown{
+        height: 20rem;
+        background-color: var(--Yellow-500);
+        margin-bottom: 1rem;   
+    }
+    .left .leftDown img{
+        height: 70%;
+        width: auto;
+        margin-top: 1rem;
+    }
+    
+    .rightUp{
+        display: flex;
+        flex-direction: column;
+    }
+    .rightMainUp{
+        background-color: var(--Purple-500);
+        height: 15rem;
+        border-radius: 1rem;
+        padding: 1.5rem;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .rightMainUp h3{
+        font-size: 1.8rem;
+    }
+    .rightMainUp h3 span{
+        color: var(--Yellow-500);
+    }
+    .rightMainUp img{
+        width:30%;
+        margin-top: 2rem;
+    
+    }
+    .rightMainUp p{
+        font-size: 0.7rem;
+    
+    }
+    
+    .rightMainDown{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 1rem;
+    }
+    .rightMainDown div{
+        width: 100%;
+        border-radius: 1rem;
+        padding: 1rem;
+        height: 10rem;
+        
+    }
+    
+    .rightMainLeft{
+        background-color: white;
+        font-weight: bold;
+        text-align: center;
+    }
+    
+    .rightMainLeft img{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    
+    .rightMainRight{
+        background-color: var(--Yellow-500);
+        margin-left: 0rem;
+        height: 15rem;
+        background-image: url(./assets/images/illustration-consistent-schedule.webp);
+        background-size: 60%;
+        background-repeat: no-repeat;
+        background-position: left 10px bottom -90px;
+        font-weight: bold;
+        margin-top: 1rem;
+        
+        
+    }
+    
+    
+    .rightSub{
+        height: 22rem;
+        background-color: var(--Purple-100);
+        margin-left: 0rem;
+        border-radius: 1rem;
+        padding: 1rem;
+        background-image: url(./assets/images/illustration-schedule-posts.webp);
+        background-size: 50%;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-top: 1rem;
+        text-align: center;
+    }
+    
+    .rightSub img{
+        width: 150%;
+        overflow: hidden;
+    }
+    .rightSub p{
+        margin-top: 16rem;
+        font-size: 0.8rem;
+    }
+    .rightDown{
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: 1fr 2fr;
+        margin-top: 1rem;
+        
+    }
+    
+    .rightDown div{
+        padding: 1rem;
+        border-radius: 1rem;
+    }
+    
+    .rightDownLeft{
+        background-color: white;
+        margin-right: 0rem;
+    }
+    .rightDownLeft span{
+        font-size: 2rem;
+    }
+    .rightDownLeft p{
+        font-size: 0.6rem;
+    }
+    .rightDownLeft img{
+        width: 100%;
+        margin-top: 1.5rem;
+    }
+    .rightDownRight{
+        background-color: var(--Purple-500);
+        height: 10rem;
+        display: flex;    
+        color: white;
+        font-size: 1.2rem;
+        align-items: center;
+        font-weight: bold;
+        margin-top: 1rem;
+    }
+    
+    .rightDownRight img{
+        height: 100%;
+        margin-right: rem;    
+    }
+       
+    
+}
